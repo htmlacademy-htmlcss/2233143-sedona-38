@@ -14,10 +14,10 @@
     font-display: swap;
     }
 
-
-  ::after,
-  ::before {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html {
@@ -48,12 +48,16 @@ body {
   border: none;
   border-radius: 4px;
   padding: 8px, 50px, 8px, 50px;
-  width: 140px;
-  height: 36px;
+  min-width: 140px;
+  min-height: 36px;
 }
 
 .card-add {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
+}
+
+.button.in-favorite {
+  background-color: #7db54f;
 }
 
 .button-hotel-search {
@@ -63,13 +67,13 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  background: #756157;
+  background-color: #756157;
   display: inline-block;
   border: none;
   border-radius: 4px;
   padding: 8px, 50px, 8px, 50px;
-  width: 376px;
-  height: 52px;
+  min-width: 376px;
+  min-height: 52px;
 }
 
 .subscribes-button {
@@ -77,13 +81,27 @@ body {
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
-  background: #82B3D3;
+  background-color: #82b3d3;
   text-transform: uppercase;
   border: none;
   border-radius: 0 4px 4px 0;
   padding: 8px, 50px, 8px, 50px;
-  width: 232px;
-  height: 52px;
+  min-width: 232px;
+  min-height: 52px;
+}
+
+.card-actions.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  min-height: 36px;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .placeholder {
@@ -117,33 +135,33 @@ body {
   background-repeat: no-repeat;
   background-position: 0% 100%;
   background-size: auto, cover;
+  display: flex;
 }
 
 .advantages-list {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 .advantage-first-reason {
-  background-color:#82B3D3;
+  background-color:#82b3d3;
 }
 
 .advantage-second-reason {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantage-third-reason {
-  background: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantage-fourth-reason {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantage-fifth-reason{
-  background-color:#82B3D3;
+  background-color:#82b3d3;
 }
 
 .title {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -259,7 +277,7 @@ body {
   border: none;
   padding: 12px, 20px, 12px, 20px;
   width: 143px;
-  height: 48;
+  height: 48px;
   background-color: #f2f2f2;
   border-color: #f2f2f2;
 }
@@ -305,7 +323,6 @@ body {
 
 .select-control {
   font-family: inherit;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -344,7 +361,7 @@ select::-ms-expand {
 .card-detail{
   font-size: 18px;
   line-height: 21px;
-  color: 333333;
+  color: #333333;
 }
 
 .rating-label {
@@ -367,8 +384,9 @@ select::-ms-expand {
   font-size: 20px;
   line-height: 36px;
   text-align: center;
+  background-color: #f2f2f2;
   color: #000000;
-  background-color: f2f2f2;
+  text-decoration: none;
 }
 
 .pagination-link {
@@ -396,7 +414,7 @@ align-items: center;
 padding: 96px, 258px, 104px, 258px;
 width: 1200px;
 height: 415px;
-background: #ffffff;
+background-color: #ffffff;
 }
 
 
